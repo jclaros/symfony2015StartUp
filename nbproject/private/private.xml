@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/app/config/parameters.yml.dist</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/AppBundle/Controller/DefaultController.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/AppBundle/Security/Firewall/WsseListener.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/AppBundle/Resources/config/services.yml</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/app/config/routing_dev.yml</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/Acme/DemoBundle/Resources/config/services.xml</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/security_listeners.xml</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/AppBundle/DependencyInjection/Security/Factory/WsseFactory.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/app/config/config.yml</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/app/config/services.yml</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/AppBundle/Security/Authentication/Token/WsseUserToken.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/AppBundle/Controller/BaseController.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/web/app_dev.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/app/config/routing.yml</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/Acme/DemoBundle/AcmeDemoBundle.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/vendor/symfony/symfony/src/Symfony/Component/Security/Http/Firewall/ListenerInterface.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/AppBundle/AppBundle.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/app/SymfonyRequirements.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/AppBundle/Entity/Group.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/composer.json</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/app/config/parameters.yml</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/AppBundle/DependencyInjection/AppExtension.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/vendor/friendsofsymfony/user-bundle/Model/User.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/AppBundle/Security/Authentication/Provider/WsseProvider.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/app/AppKernel.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/src/AppBundle/Entity/User.php</file>
+            <file>file:/Users/jonathan/symfonyClasses/first/videoclub/app/config/security.yml</file>
+        </group>
+    </open-files>
+</project-private>
