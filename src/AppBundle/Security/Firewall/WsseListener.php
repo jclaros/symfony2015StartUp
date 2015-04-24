@@ -32,10 +32,11 @@ class WsseListener implements ListenerInterface
         $request = $event->getRequest();
 
         $wsseRegex = '/UsernameToken Username="([^"]+)", PasswordDigest="([^"]+)", Nonce="([^"]+)", Created="([^"]+)"/';
+      
         if (!$request->headers->has('x-wsse') || 1 !== preg_match($wsseRegex, $request->headers->get('x-wsse'), $matches)) {
             return;
         }
-
+        
         $token = new WsseUserToken();
         $token->setUser($matches[1]);
 
@@ -49,6 +50,8 @@ class WsseListener implements ListenerInterface
 
             return;
         } catch (AuthenticationException $failed) {
+            $failedMessage = 'WSSE Login failed for '.$token->getUsername().'. Why ? '.$failed->getMessage();
+            var_dump($failedMessage);
             // ... you might log something here
 
             // To deny the authentication clear the token. This will redirect to the login page.
