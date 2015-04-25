@@ -39,7 +39,7 @@ class DefaultController extends FOSRestController
      *   resource = true,
      *   description = "Create Movie",
      *   output = "Array",
-     *   authentication = false,
+     *   authentication = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
      *     404 = "Returned when the page is not found"
@@ -49,21 +49,15 @@ class DefaultController extends FOSRestController
      */
     public function postMoviesAction(Request $request)
     {
+//      if(!$this->isGranted("ROLE_ADMIN")){
+//        return new \Symfony\Component\HttpFoundation\Response("Autenticación necesaria", 403);
+//      }
       $content = json_decode($request->getContent());
-      $em = $this->getDoctrine()->getManager();
       if(empty($content)){
         return new \Symfony\Component\HttpFoundation\Response("error with the data", 401);
       }
-      
       try {
-        
-          $movie = new \AppBundle\Entity\Movie();
-          $movie->setBorrowed(false);
-          $movie->setTitle($content->title);
-          $movie->setYear($content->year);
-          $em->persist($movie);
-          $em->flush();
-          
+          $movie = $this->get("appbundle.movie_service")->saveMovie($content);
       } catch (Exception $exc) {
           return new \Symfony\Component\HttpFoundation\Response("error with the data", 401);
       }
@@ -113,6 +107,11 @@ class DefaultController extends FOSRestController
      */
     public function putMovieAction($id)
     { 
+      
+      if(!$this->isGranted("ROLE_ADMIN")){
+        return new \Symfony\Component\HttpFoundation\Response("Autenticación necesaria", 403);
+      }
+      
       try {
         
         $movie = $this->getDoctrine()->getRepository("AppBundle:Movie")->find($id);
